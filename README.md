@@ -105,3 +105,117 @@ h1,
   font-family: Georgia;
 }
 todos os elementos 'h1' e o elemento que tem valor da classe igual a menu terao suas fontes alteradas
+
+# FONT
+Muda a fonte do texto.
+Exemplo:
+h1 {
+  font-family: Georgia;
+}
+Caso a fonte seja algo baixado, ela precisa estar na pasta ou no servidor.
+Caso a fonte tenha mais de uma palavra, coloca ela desse jeito:
+h1 {
+  font-family: 'Courier New';
+}
+
+# FONT-SIZE
+Muda o tamanho do texto.
+Exemplo:
+p {
+  font-size: 18px;
+}
+
+# FONT-WEIGHT
+Controla a grossura das letras do texto.
+Exemplo:
+p {
+  font-weight: bold;
+}
+
+# TEXT-ALIGN
+Para alinhar o texto em uma posição.
+Exemplo:
+h1 {
+  text-align: right;
+}
+Ela pode ser colocada como left, center, right ou justify.
+
+# COLOR AND BACKGROUND-COLOR
+h1 {
+  color: #F0F8FF; ou color: rgb(255, 0, 0);
+  background-color: blue;
+}
+
+# OPACITY
+O quão transparente um elemento é.
+Exemplo:
+.overlay {
+  opacity: 0.5;
+}
+
+# BACKGROUND-IMAGE
+Exemplo:
+.main-banner {
+  background-image: url('images/mountains.jpg');
+}
+
+# IMPORTANT
+Quase nunca é usada pois se usada, nao tem como mudar o estilo
+Exemplo:
+p {
+  color: blue !important;
+}
+
+# BOX MODEL
+#### HEIGHT AND WIDTH
+Uma caixa tem duas dimensões, comprimento(width) e altura(height)
+Exemplo:
+p {
+  height: 80px;
+  width: 240px;
+}
+
+podemos fazer assim tmb
+p {
+  width:100%;
+}
+
+colocando 100%, significa que o tamanho do conteúdo ocupará 100% do comprimento.
+
+#### BORDERS
+p {
+  border: 3px solid coral;
+}
+
+o primeiro é a grossura, depois o estilo da borda e depois a cor
+
+##### BORDER-RADIUS
+Para modificar as beiradas da borda de um elemento.
+Exemplo:
+div.container {
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+
+#### PADDING
+É o espaço entre o conteúdo e a borda, ou seja, quanto mais pixel ele tiver, mais espaçosa a borda será
+Exemplo:
+p.content-header {
+  border: 3px solid coral;
+  padding: 10px;
+}
+
+Para mover partes específicas de um padding, voce pode usar:
+- padding-top
+- padding-right
+- padding-bottom
+- padding-left
+
+##### PADDING SHORTHAND
+Deixa voce especificar os tamanhos dos 4 padding em uma só linha.
+Exemplo:
+p.content-header {
+  padding: 6px 11px 4px 9px;
+}
+
+#### MARGIN
