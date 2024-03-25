@@ -351,3 +351,76 @@ Exemplo:
 }
 
 #### POSITION STICKY
+É como o fixed, mas fica "grudado" em uma posição específica, é como o fixed
+Exemplo:
+.box-bottom {
+  background-color: darkgreen;
+  position: sticky;
+  top: 240px;
+}
+
+#### Z-INDEX
+Indica o quanto um elemento tem que ir para frente ou para trás caso ocorro um overlap(quando um elemento está em cima do outro)
+Exemplo:
+header {
+  z-index:1;
+}
+
+### DISPLAY
+Todo elemento html tem um valor padrão para dizer se ele pode compartilhar seu espaço horizontal com outros elementos.
+O display pode ter os seguintes valores:
+- inline
+- block
+- inline-block
+
+#### INLINE
+O valor padrão para certos elementos como <em>, <strong> e <a> é chamado de inline. Elementos inline tem uma caixa que aperta firmimente em
+volta do conteúdo, apenas tomando o espaço necessário para ser visualizado. Contéudos inline não podem ter seus width e height alterados.
+
+#### BLOCK
+Alguns elementos não são exibidos na mesma linha que os conteúdo ao redor dele. Eles são chamados de block-level elements. Por padrão,
+esses elementos enchem seu width inteiro da página, mas sua proriedade width pode ser alterada.
+
+#### INLINE-BLOCK
+Combina os recursos de inline com o de block. Elementos inline-block podem aparecer próximos um do outro e podemos especificar suas dimensões usando
+width e height. Imagens são o melhor exemplo de elemento padrão inline-block.
+Exemplo:
+- HTML
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+
+- CSS
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+
+### FLOAT
+Usado mais normalmente para grudar um texto numa imagem. Também usada para mover o elemento para o lado máximo esquerdo e direito.
+float pode ter esses valores:
+- left: move um elemento para esquerda até onde der
+- right: move um elemento para esquerda até onde der
+
+Precisa especificar o width como no exemplo abaixo:
+Exemplo:
+.orange-section {
+  background-color: orange;
+  width: 50%;
+  float: right;
+}
+
+### CLEAR
+Especifica como um elemento tem que se comportar quando ele "encosta" em outro elemento na página.
+clear pode ter os seguintes valores:
+- left: the left side of the element will not touch any other element within the same containing element
+- right: the right side of the element will not touch any other element within the same containing element
+- both: neither side of the element will touch any other element within the same containing element
+- none: the element can touch either side
