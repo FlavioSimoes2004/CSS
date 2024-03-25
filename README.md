@@ -297,3 +297,57 @@ Exemplo:
 .future {
   visibility: hidden;
 }
+
+#### BOX-SIZING
+Controla o modelo de caixa usado pelo browser.
+O valor padrão para box-sizing é content-box.
+Aquele fundo cinza e as bordas de um botão é a caixa.
+
+## AJUSTANDO POSIÇÕES DE ELEMENTOS
+### POSITION
+Block-level elements são elementos elementos que possuem um width máximo até o seu parent, e previnem que outros elementos fique ao seu lado.
+o position pode ter os seguintes valores:
+- static (valor padrão do position)
+- fixed
+- relative
+- absolute
+- sticky
+
+Exemplo:
+.question {
+  text-align: center;
+  position: static;
+}
+
+##### POSITION RELATIVE
+Permite mover o elemento a partir da posição que está do static.
+Para mover o elemento, podemos usar:
+- top
+- right
+- bottom
+- left
+
+Exemplo:
+.green-box {
+  background-color: green;
+  position: relative;
+  top: 50px;
+  left: 120px;
+}
+
+#### POSITION ABSOLUTE
+Quando a posição de um elemento recebe absolute, todos os outros elementos irão agir como se esse elemento não estivesse presente no site.
+
+
+#### POSITION FIXED
+Quando botamos para abaixar a página, todos os elementos se movem, mas podemos usar o fixed para fixar elementos naquela posição, mesmo
+quando a página se move.
+
+Exemplo:
+.title {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#### POSITION STICKY
