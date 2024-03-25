@@ -219,3 +219,81 @@ p.content-header {
 }
 
 #### MARGIN
+Se refere ao espaço fora da caixa, pode ser usada para aumentar a distancia entre elementos
+Exemplo:
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+
+Se quiser ser mais específico em que parte mudar, pode usar o:
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+
+margin pode ser definido desta maneira também:
+p {
+  margin: 6px 10px 5px 12px;
+}
+
+ou
+
+p {
+  margin: 20px 10px;
+}
+
+#### AUTO
+O margin também permite centrar conteúdos, porém, você precisa seguir alguns requerimentos de sintaxe.
+Isto serve para centralizar seções como div, section, nav, article, etc.
+Exemplo:
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+
+Em ordem para centralizar um elemento, um valor width deve ser colocado, caso contrário, o width será igual ao valor máximo.
+Não é possível centralizar um elemento que está com o width máximo.
+
+#### MARGIN COLLAPSE
+Pulei pq n achei necessário
+
+#### MIN AND MAX WIDTH AND HEIGHT
+Para dizer qual o mínimo e máximo width ou height de um elemento
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#### OVERFLOW
+Essa propriedade controla o que acontece com um elemento que acaba sendo maior que a caixa, como uma imagem com dimensao 364x244 e a sua caixa é
+300x200
+Exemplo:
+p {
+  overflow: scroll; 
+}
+
+Valores do overflow:
+- hidden: Esconde os elementos que estão em oveflow
+- scroll: Adiciona um scrollbar para que o resto do elemento seja visualizado
+- visible: O conteúdo que está em overflow será mostrado, mesmo ele ultrapassando a caixa (esse é o valor padrão do overflow)
+
+#### RESETTING DEFAULTS
+Muitos desenvolvedores escolhem resetar os valores para o padrão para assim eles poderem trabalhar num ambiente limpo.
+* {
+  margin: 0;
+  padding: 0;
+}
+Quando essas duas propriedades são igual a 0, elas não precisam de 'px'
+
+#### VISIBILITY
+Elementos podem ser escondidos visualmente do site usando a propriedade visibility(visibilidade)
+Ela pode ter os seguintes valores:
+- hidden
+- visible
+- collapse
+
+Exemplo:
+.future {
+  visibility: hidden;
+}

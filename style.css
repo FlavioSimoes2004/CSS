@@ -1,4 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:400px;
+    margin: 0 auto;
+}
+
 p {
+    text-align: center;
     color : rgb(255, 0, 0);
     border: 1px dotted black;
     /*padding:10px;*/
